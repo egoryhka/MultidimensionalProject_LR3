@@ -1,0 +1,154 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="407c2cee-7047-47ac-a1f2-cf7978bb760d" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>OLAP Balance Teplo DB</ID>
+  <Name>OLAP Balance Teplo DB</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>OLAP Balance Teplo DB</DataSourceID>
+  <Schema>
+    <xs:schema id="OLAP_x0020_Balance_x0020_Teplo_x0020_DB" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="OLAP_x0020_Balance_x0020_Teplo_x0020_DB" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="6972f0e6-6880-4b9c-ac4f-e52bdb0e7171">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_T_OLAP_Fact_Balance_Teplo" msprop:design-time-name="d0f4e043-5959-46ac-a2c2-e272d0ae6aa4" msprop:DbTableName="T_OLAP_Fact_Balance_Teplo" msprop:FriendlyName="T_OLAP_Fact_Balance_Teplo" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="FK_Дата" msprop:design-time-name="e90efe43-cc81-42be-b2e2-8de2213c5075" msprop:DbColumnName="FK_Дата" msprop:FriendlyName="FK_Дата" type="xs:dateTime" />
+                  <xs:element name="FK_Номер_x0020_печи" msprop:design-time-name="e7e2a7e3-817b-4bff-bda8-c43ec9c9860f" msprop:DbColumnName="FK_Номер печи" msprop:FriendlyName="FK_Номер печи" type="xs:unsignedByte" />
+                  <xs:element name="Приход_x0020_тепла_x003A__x0020_горение_x0020_кокса_x002C__x0020_кДж_x002F_кг_x0020_чугуна" msprop:design-time-name="eb4e2f7d-4223-408c-9145-fc380070d95f" msprop:DbColumnName="Приход тепла: горение кокса, кДж/кг чугуна" msprop:FriendlyName="Приход тепла: горение кокса, кДж/кг чугуна" type="xs:double" minOccurs="0" />
+                  <xs:element name="Приход_x0020_тепла_x003A__x0020_физическое_x0020_тепло_x0020_дутья_x002C__x0020_кДж_x002F_кг_x0020_чугуна" msprop:design-time-name="58aa6871-2bb7-46d9-82fa-6099d32c3796" msprop:DbColumnName="Приход тепла: физическое тепло дутья, кДж/кг чугуна" msprop:FriendlyName="Приход тепла: физическое тепло дутья, кДж/кг чугуна" type="xs:double" minOccurs="0" />
+                  <xs:element name="Приход_x0020_тепла_x003A__x0020_тепло_x0020_от_x0020_горения_x0020_природного_x0020_газа_x002C__x0020_кДж_x002F_кг_x0020_чугуна" msprop:design-time-name="4d7c9527-2127-493f-9fd5-59d6ad5dc4fb" msprop:DbColumnName="Приход тепла: тепло от горения природного газа, кДж/кг чугуна" msprop:FriendlyName="Приход тепла: тепло от горения природного газа, кДж/кг чугуна" type="xs:double" minOccurs="0" />
+                  <xs:element name="Приход_x0020_тепла_x003A__x0020_тепло_x0020_шлакообразования_x002C__x0020_кДж_x002F_кг_x0020_чугуна" msprop:design-time-name="18a25a65-b7f9-45d1-afb1-6a504e2e9bfa" msprop:DbColumnName="Приход тепла: тепло шлакообразования, кДж/кг чугуна" msprop:FriendlyName="Приход тепла: тепло шлакообразования, кДж/кг чугуна" type="xs:double" minOccurs="0" />
+                  <xs:element name="Расход_x0020_тепла_x003A__x0020_восстановление_x0020_оксидов_x0020_Fe_x002C__x0020_кДж_x002F_кг_x0020_чугуна" msprop:design-time-name="a590a7ec-30a9-4ef7-8976-8a1ab9b949dd" msprop:DbColumnName="Расход тепла: восстановление оксидов Fe, кДж/кг чугуна" msprop:FriendlyName="Расход тепла: восстановление оксидов Fe, кДж/кг чугуна" type="xs:double" minOccurs="0" />
+                  <xs:element name="Расход_x0020_тепла_x003A__x0020_восстановление_x0020_оксидов_x0020_примесей_x002C__x0020_кДж_x002F_кг_x0020_чугуна" msprop:design-time-name="917de47b-e80c-40c6-99af-42ce84ccc6a9" msprop:DbColumnName="Расход тепла: восстановление оксидов примесей, кДж/кг чугуна" msprop:FriendlyName="Расход тепла: восстановление оксидов примесей, кДж/кг чугуна" type="xs:double" minOccurs="0" />
+                  <xs:element name="Расход_x0020_тепла_x003A__x0020_десульфурация_x0020_чугуна_x002C__x0020_кДж_x002F_кг_x0020_чугуна" msprop:design-time-name="ad2b6738-f87d-4432-a964-6e508bf1bd4e" msprop:DbColumnName="Расход тепла: десульфурация чугуна, кДж/кг чугуна" msprop:FriendlyName="Расход тепла: десульфурация чугуна, кДж/кг чугуна" type="xs:double" minOccurs="0" />
+                  <xs:element name="Расход_x0020_тепла_x003A__x0020_восстановление_x0020_оксидов_x0020_Fe_x0020_водородом_x002C__x0020_кДж_x002F_кг_x0020_чугуна" msprop:design-time-name="6a9341bc-c124-4bc9-acee-59c2afb1939b" msprop:DbColumnName="Расход тепла: восстановление оксидов Fe водородом, кДж/кг чугуна" msprop:FriendlyName="Расход тепла: восстановление оксидов Fe водородом, кДж/кг чугуна" type="xs:double" minOccurs="0" />
+                  <xs:element name="Расход_x0020_тепла_x003A__x0020_нагрев_x0020_чугуна_x002C__x0020_кДж_x002F_кг_x0020_чугуна" msprop:design-time-name="2f45b372-420b-4200-963d-3f84cf3152cb" msprop:DbColumnName="Расход тепла: нагрев чугуна, кДж/кг чугуна" msprop:FriendlyName="Расход тепла: нагрев чугуна, кДж/кг чугуна" type="xs:double" minOccurs="0" />
+                  <xs:element name="Расход_x0020_тепла_x003A__x0020_нагрев_x0020_шлака_x002C__x0020_кДж_x002F_кг_x0020_чугуна" msprop:design-time-name="6261c5ed-afea-4904-8f74-a39514501d32" msprop:DbColumnName="Расход тепла: нагрев шлака, кДж/кг чугуна" msprop:FriendlyName="Расход тепла: нагрев шлака, кДж/кг чугуна" type="xs:double" minOccurs="0" />
+                  <xs:element name="Расход_x0020_тепла_x003A__x0020_разложение_x0020_влаги_x0020_дутья_x002C__x0020_кДж_x002F_кг_x0020_чугуна" msprop:design-time-name="ed6d132f-f9ea-4845-9ee7-a4c33ab54f08" msprop:DbColumnName="Расход тепла: разложение влаги дутья, кДж/кг чугуна" msprop:FriendlyName="Расход тепла: разложение влаги дутья, кДж/кг чугуна" type="xs:double" minOccurs="0" />
+                  <xs:element name="Расход_x0020_тепла_x003A__x0020_разложение_x0020_известняка_x002C__x0020_кДж_x002F_кг_x0020_чугуна" msprop:design-time-name="89276c9c-386e-49f6-8411-07fa3845f1ac" msprop:DbColumnName="Расход тепла: разложение известняка, кДж/кг чугуна" msprop:FriendlyName="Расход тепла: разложение известняка, кДж/кг чугуна" type="xs:double" minOccurs="0" />
+                  <xs:element name="Расход_x0020_тепла_x003A__x0020_разложение_x0020_влаги_x0020_шихты_x002C__x0020_кДж_x002F_кг_x0020_чугуна" msprop:design-time-name="39b8b4e0-27b1-43ca-929a-8b14d9887b13" msprop:DbColumnName="Расход тепла: разложение влаги шихты, кДж/кг чугуна" msprop:FriendlyName="Расход тепла: разложение влаги шихты, кДж/кг чугуна" type="xs:double" minOccurs="0" />
+                  <xs:element name="Расход_x0020_тепла_x003A__x0020_тепло_x0020_колошникового_x0020_газа_x002C__x0020_кДж_x002F_кг_x0020_чугуна" msprop:design-time-name="edec41e4-57f7-4e2c-bcfa-755130f47f7a" msprop:DbColumnName="Расход тепла: тепло колошникового газа, кДж/кг чугуна" msprop:FriendlyName="Расход тепла: тепло колошникового газа, кДж/кг чугуна" type="xs:double" minOccurs="0" />
+                  <xs:element name="Расход_x0020_тепла_x003A__x0020_тепловые_x0020_потери_x002C__x0020_кДж_x002F_кг_x0020_чугуна" msprop:design-time-name="2364ca52-6b16-4085-a01d-01a66ea94090" msprop:DbColumnName="Расход тепла: тепловые потери, кДж/кг чугуна" msprop:FriendlyName="Расход тепла: тепловые потери, кДж/кг чугуна" type="xs:double" minOccurs="0" />
+                  <xs:element name="Общий_x0020_приход_x002F_расход_x0020_тепла_x0020_в_x0020_печи_x002C__x0020_кДж_x002F_кг_x0020_чугуна" msprop:design-time-name="c815146c-0296-49ef-b618-e5b2a955b8e6" msprop:DbColumnName="Общий приход/расход тепла в печи, кДж/кг чугуна" msprop:FriendlyName="Общий приход/расход тепла в печи, кДж/кг чугуна" type="xs:double" minOccurs="0" />
+                  <xs:element name="Производительность_x0020_среднесуточная_x002C__x0020_т_x002F_сутки" msprop:design-time-name="eb77b89c-7ecf-4f74-b482-40c54c858c65" msprop:DbColumnName="Производительность среднесуточная, т/сутки" msprop:FriendlyName="Производительность среднесуточная, т/сутки" type="xs:double" minOccurs="0" />
+                  <xs:element name="Химический_x0020_состав_x0020_чугуна_x003A__x0020_C_x002C__x0020__x0025_" msprop:design-time-name="aac30cbb-8857-48b4-b520-309bbbab5ae8" msprop:DbColumnName="Химический состав чугуна: C, %" msprop:FriendlyName="Химический состав чугуна: C, %" type="xs:double" minOccurs="0" />
+                  <xs:element name="Химический_x0020_состав_x0020_чугуна_x003A__x0020_Si_x002C__x0020__x0025_" msprop:design-time-name="7b70fa9c-995d-4e48-bf22-f9f8571a8c9c" msprop:DbColumnName="Химический состав чугуна: Si, %" msprop:FriendlyName="Химический состав чугуна: Si, %" type="xs:double" minOccurs="0" />
+                  <xs:element name="Химический_x0020_состав_x0020_чугуна_x003A__x0020_Mn_x002C__x0020__x0025_" msprop:design-time-name="ee209e34-d439-4b95-9ed8-6204c4ae0290" msprop:DbColumnName="Химический состав чугуна: Mn, %" msprop:FriendlyName="Химический состав чугуна: Mn, %" type="xs:double" minOccurs="0" />
+                  <xs:element name="Химический_x0020_состав_x0020_чугуна_x003A__x0020_S_x002C__x0020__x0025_" msprop:design-time-name="77540f6c-142e-4112-9a64-1a787063f225" msprop:DbColumnName="Химический состав чугуна: S, %" msprop:FriendlyName="Химический состав чугуна: S, %" type="xs:double" minOccurs="0" />
+                  <xs:element name="Химический_x0020_состав_x0020_чугуна_x003A__x0020_P_x002C__x0020__x0025_" msprop:design-time-name="f81febf4-5172-458c-8724-fe07b8f532ae" msprop:DbColumnName="Химический состав чугуна: P, %" msprop:FriendlyName="Химический состав чугуна: P, %" type="xs:double" minOccurs="0" />
+                  <xs:element name="Химический_x0020_состав_x0020_чугуна_x003A__x0020_Ti_x002C__x0020__x0025_" msprop:design-time-name="b05ca35f-8ae7-422a-87c1-0019c8110141" msprop:DbColumnName="Химический состав чугуна: Ti, %" msprop:FriendlyName="Химический состав чугуна: Ti, %" type="xs:double" minOccurs="0" />
+                  <xs:element name="Химический_x0020_состав_x0020_чугуна_x003A__x0020_Cr_x002C__x0020__x0025_" msprop:design-time-name="8eb758af-e5cc-4d12-b7e8-d7e0a9316f8a" msprop:DbColumnName="Химический состав чугуна: Cr, %" msprop:FriendlyName="Химический состав чугуна: Cr, %" type="xs:double" minOccurs="0" />
+                  <xs:element name="Химический_x0020_состав_x0020_чугуна_x003A__x0020_V_x002C__x0020__x0025_" msprop:design-time-name="09652b48-398d-4455-8f87-8ffd4cb7bf89" msprop:DbColumnName="Химический состав чугуна: V, %" msprop:FriendlyName="Химический состав чугуна: V, %" type="xs:double" minOccurs="0" />
+                  <xs:element name="Удельный_x0020_расход_x0020_кокса_x002C__x0020_кг_x002F_т_x0020_чугуна" msprop:design-time-name="625714df-b57c-4fb2-b1a1-b7a47cab6093" msprop:DbColumnName="Удельный расход кокса, кг/т чугуна" msprop:FriendlyName="Удельный расход кокса, кг/т чугуна" type="xs:double" minOccurs="0" />
+                  <xs:element name="Зольность_x0020_кокса_x002C__x0020__x0025_" msprop:design-time-name="3af4a9fe-e9e8-415e-b66f-d001c7cca32e" msprop:DbColumnName="Зольность кокса, %" msprop:FriendlyName="Зольность кокса, %" type="xs:double" minOccurs="0" />
+                  <xs:element name="Удельный_x0020_расход_x0020_ЖРМ_x002C__x0020_кг_x002F_т_x0020_чугуна" msprop:design-time-name="283b154f-fefc-4119-8a09-d5fd418597e3" msprop:DbColumnName="Удельный расход ЖРМ, кг/т чугуна" msprop:FriendlyName="Удельный расход ЖРМ, кг/т чугуна" type="xs:double" minOccurs="0" />
+                  <xs:element name="Удельный_x0020_выход_x0020_шлака_x002C__x0020_кг_x002F_т_x0020_чугуна" msprop:design-time-name="8ca77454-8594-4428-9a49-d6543775c42d" msprop:DbColumnName="Удельный выход шлака, кг/т чугуна" msprop:FriendlyName="Удельный выход шлака, кг/т чугуна" type="xs:double" minOccurs="0" />
+                  <xs:element name="Основность_x0020_шлака_x0020_CaO_x0020__x002F__x0020_SiO2_x002C__x0020_ед." msprop:design-time-name="fd4ff029-af5a-4e6d-8133-2a984f197050" msprop:DbColumnName="Основность шлака CaO / SiO2, ед." msprop:FriendlyName="Основность шлака CaO / SiO2, ед." type="xs:double" minOccurs="0" />
+                  <xs:element name="Основность_x0020_шлака_x0020__x0028_CaO_x0020__x002B__x0020_MgO_x0029__x0020__x002F__x0020_SiO2_x002C__x0020_ед." msprop:design-time-name="c6b96cdc-9a98-4540-8cf8-2a2ee521dff7" msprop:DbColumnName="Основность шлака (CaO + MgO) / SiO2, ед." msprop:FriendlyName="Основность шлака (CaO + MgO) / SiO2, ед." type="xs:double" minOccurs="0" />
+                  <xs:element name="Основность_x0020_шлака_x0020__x0028_CaO_x0020__x002B__x0020_MgO_x0029__x0020__x002F__x0020__x0028_SiO2_x0020__x002B__x0020_Al2O3_x0029__x002C__x0020_ед." msprop:design-time-name="65a914e6-1c8b-47ab-9324-cd4c801710de" msprop:DbColumnName="Основность шлака (CaO + MgO) / (SiO2 + Al2O3), ед." msprop:FriendlyName="Основность шлака (CaO + MgO) / (SiO2 + Al2O3), ед." type="xs:double" minOccurs="0" />
+                  <xs:element name="Дутье_x003A__x0020_расход_x002C__x0020_м3_x002F_мин" msprop:design-time-name="8cb71ae1-982b-4bb3-adfb-1433f87e9225" msprop:DbColumnName="Дутье: расход, м3/мин" msprop:FriendlyName="Дутье: расход, м3/мин" type="xs:double" minOccurs="0" />
+                  <xs:element name="Дутье_x003A__x0020_температура_x002C__x0020__x00B0_С" msprop:design-time-name="eb7cab6e-7de0-46b6-8406-855e9a760aae" msprop:DbColumnName="Дутье: температура, °С" msprop:FriendlyName="Дутье: температура, °С" type="xs:double" minOccurs="0" />
+                  <xs:element name="Дутье_x003A__x0020_влажность_x002C__x0020_г_x002F_м3" msprop:design-time-name="ecf75660-a947-4281-b0f5-724fef70b0e4" msprop:DbColumnName="Дутье: влажность, г/м3" msprop:FriendlyName="Дутье: влажность, г/м3" type="xs:double" minOccurs="0" />
+                  <xs:element name="Дутье_x003A__x0020_содержание_x0020_O2_x002C__x0020__x0025_" msprop:design-time-name="a73ba363-ae19-4186-8d64-95db93475a70" msprop:DbColumnName="Дутье: содержание O2, %" msprop:FriendlyName="Дутье: содержание O2, %" type="xs:double" minOccurs="0" />
+                  <xs:element name="Дутье_x003A__x0020_удельный_x0020_расход_x0020_природного_x0020_газа_x002C__x0020_м3_x002F_т_x0020_чугуна" msprop:design-time-name="be1d65ea-71c0-4cfb-867b-272e5f4adb28" msprop:DbColumnName="Дутье: удельный расход природного газа, м3/т чугуна" msprop:FriendlyName="Дутье: удельный расход природного газа, м3/т чугуна" type="xs:double" minOccurs="0" />
+                  <xs:element name="Состав_x0020_колошникового_x0020_газа_x003A__x0020_CO_x002C__x0020__x0025_" msprop:design-time-name="918b0ae3-b4e9-433d-b7e8-f1cc3ec91cb6" msprop:DbColumnName="Состав колошникового газа: CO, %" msprop:FriendlyName="Состав колошникового газа: CO, %" type="xs:double" minOccurs="0" />
+                  <xs:element name="Состав_x0020_колошникового_x0020_газа_x003A__x0020_CO2_x002C__x0020__x0025_" msprop:design-time-name="58083b1e-3dfe-4e4a-8890-d10d0f3d83c7" msprop:DbColumnName="Состав колошникового газа: CO2, %" msprop:FriendlyName="Состав колошникового газа: CO2, %" type="xs:double" minOccurs="0" />
+                  <xs:element name="Состав_x0020_колошникового_x0020_газа_x003A__x0020_H2_x002C__x0020__x0025_" msprop:design-time-name="ef455dec-d3d3-4006-b55a-e2779f9a8c80" msprop:DbColumnName="Состав колошникового газа: H2, %" msprop:FriendlyName="Состав колошникового газа: H2, %" type="xs:double" minOccurs="0" />
+                  <xs:element name="Температура_x0020_колошникового_x0020_газа_x002C__x0020__x00B0_С" msprop:design-time-name="a410d1d8-335f-476b-a8d7-b6300e576d0c" msprop:DbColumnName="Температура колошникового газа, °С" msprop:FriendlyName="Температура колошникового газа, °С" type="xs:double" minOccurs="0" />
+                  <xs:element name="Степень_x0020_использования_x0020_CO_x0020_в_x0020_печи_x002C__x0020_ед." msprop:design-time-name="2399210b-53fc-4794-97ad-c204a93c4a19" msprop:DbColumnName="Степень использования CO в печи, ед." msprop:FriendlyName="Степень использования CO в печи, ед." type="xs:double" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_T_OLAP_Dim_Pech" msprop:design-time-name="e6779af8-92e3-4c79-b845-986a24ee41ad" msprop:DbTableName="T_OLAP_Dim_Pech" msprop:FriendlyName="T_OLAP_Dim_Pech" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="PK_Номер_x0020_печи" msprop:design-time-name="f41c5b26-223b-44b6-9dac-d495e425e913" msprop:DbColumnName="PK_Номер печи" msprop:FriendlyName="PK_Номер печи" type="xs:unsignedByte" />
+                  <xs:element name="Наименование_x0020_печи" msprop:design-time-name="92d722e4-ccf2-432d-9371-6ae30373270f" msprop:DbColumnName="Наименование печи" msprop:FriendlyName="Наименование печи">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_T_OLAP_Dim_Dates" msprop:design-time-name="0955f838-538f-4d1e-af72-9396b6922b83" msprop:DbTableName="T_OLAP_Dim_Dates" msprop:FriendlyName="T_OLAP_Dim_Dates" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="PK_Дата" msprop:design-time-name="3d99d66b-44f6-40bb-94cf-4576cfa59408" msprop:DbColumnName="PK_Дата" msprop:FriendlyName="PK_Дата" type="xs:dateTime" />
+                  <xs:element name="Месяц" msdata:ReadOnly="true" msprop:design-time-name="750a1025-9c48-47d0-bfc1-d561496e249f" msprop:DbColumnName="Месяц" msprop:FriendlyName="Месяц" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="8" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Год" msdata:ReadOnly="true" msprop:design-time-name="f4a50c35-bb7c-4c98-af57-1aad285f6cc0" msprop:DbColumnName="Год" msprop:FriendlyName="Год" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_T_OLAP_Fact_Balance_Teplo" />
+          <xs:field xpath="FK_Дата" />
+          <xs:field xpath="FK_Номер_x0020_печи" />
+        </xs:unique>
+        <xs:unique name="dbo_T_OLAP_Dim_Pech_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_T_OLAP_Dim_Pech" />
+          <xs:field xpath="PK_Номер_x0020_печи" />
+        </xs:unique>
+        <xs:unique name="dbo_T_OLAP_Dim_Dates_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_T_OLAP_Dim_Dates" />
+          <xs:field xpath="PK_Дата" />
+        </xs:unique>
+        <xs:keyref name="FK_T_OLAP_HeatBalance_Technology_Facts_T_OLAP_Dates" refer="dbo_T_OLAP_Dim_Dates_Constraint1">
+          <xs:selector xpath=".//dbo_T_OLAP_Fact_Balance_Teplo" />
+          <xs:field xpath="FK_Дата" />
+        </xs:keyref>
+        <xs:keyref name="FK_T_OLAP_HeatBalance_Technology_Facts_T_Furnaces" refer="dbo_T_OLAP_Dim_Pech_Constraint1">
+          <xs:selector xpath=".//dbo_T_OLAP_Fact_Balance_Teplo" />
+          <xs:field xpath="FK_Номер_x0020_печи" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <OLAP_x0020_Balance_x0020_Teplo_x0020_DB xmlns="" />
+  </Schema>
+</DataSourceView>

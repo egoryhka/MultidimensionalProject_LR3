@@ -1,0 +1,816 @@
+﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="80b04a4e-805c-4414-9293-a8c38be05681" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>T OLAP Dim Dates</ID>
+  <Name>T OLAP Dim Dates</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="CubeDimensionBinding" dwd:design-time-name="1a760d1d-26cf-46c2-bfac-5fca48cbf6e3">
+    <DataSourceID>.</DataSourceID>
+    <CubeID>OLAP Balance Teplo DB</CubeID>
+    <CubeDimensionID>T OLAP Dim Dates</CubeDimensionID>
+  </Source>
+  <Columns>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="e743a527-b093-4c7e-9f6b-45f8a7cd2fe2">
+      <ID>PK Дата</ID>
+      <Name>PK Дата</Name>
+      <IsKey>true</IsKey>
+      <Type>Date</Type>
+      <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="02c547ef-5773-4c8e-bb5b-844ed6da2792">
+        <CubeID>OLAP Balance Teplo DB</CubeID>
+        <CubeDimensionID>T OLAP Dim Dates</CubeDimensionID>
+        <AttributeID>PK Дата</AttributeID>
+        <Type>All</Type>
+      </Source>
+      <Content>Key</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="a00ec027-4178-4f01-9d90-bd3ad7a35be8">
+      <ID>Дутье Влажность гм3</ID>
+      <Name>Дутье Влажность гм3</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="842b085c-152b-4b78-b7da-f82439fb0e68">
+        <MeasureID>Дутье Влажность гм3</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="ec36bad7-eb32-41c1-8f80-40a47edeb17c">
+      <ID>Дутье Расход м3мин</ID>
+      <Name>Дутье Расход м3мин</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="52b1d6ea-2504-48c0-b129-c601deabe31d">
+        <MeasureID>Дутье Расход м3мин</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="615217d6-bd7d-4ab1-a34e-45cb70b40b9c">
+      <ID>Дутье Содержание O2</ID>
+      <Name>Дутье Содержание O2</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="d2bcca20-edc1-4def-b278-3ddf3c941348">
+        <MeasureID>Дутье Содержание O2</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="7b16e6c7-b7c2-400b-b945-ff0148fc4132">
+      <ID>Дутье Температура °С</ID>
+      <Name>Дутье Температура °С</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="7f9a689e-5608-4fbc-95d6-2a5a93ad10d7">
+        <MeasureID>Дутье Температура °С</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="e53926ed-1ad5-47f2-8564-29e3f6e8c481">
+      <ID>Дутье Удельный Расход Природного Газа м3т Чугуна</ID>
+      <Name>Дутье Удельный Расход Природного Газа м3т Чугуна</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="77ac1f84-3a8b-419c-996e-ad2bafe87ba0">
+        <MeasureID>Дутье Удельный Расход Природного Газа м3т Чугуна</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="e6a69e31-0309-4393-89cc-9f5301627d71">
+      <ID>Зольность Кокса</ID>
+      <Name>Зольность Кокса</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="9f8dfcce-2134-4c87-8e0d-de3e80ee388d">
+        <MeasureID>Зольность Кокса</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="97b8be00-e76c-41e4-97ef-5fe92b0f5f00">
+      <ID>Общий Приходрасход Тепла в Печи к Джкг Чугуна</ID>
+      <Name>Общий Приходрасход Тепла в Печи к Джкг Чугуна</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="1da70144-0996-4670-8800-c9e25d781cd0">
+        <MeasureID>Общий Приходрасход Тепла в Печи к Джкг Чугуна</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="acf2b223-29b5-451a-8567-f83fa55295b9">
+      <ID>Основность Шлака  Ca O  Mg O   Si O2  Al2O3 Ед</ID>
+      <Name>Основность Шлака  Ca O  Mg O   Si O2  Al2O3 Ед</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="732999c7-7b32-4f03-a945-70fb1ae318da">
+        <MeasureID>Основность Шлака  Ca O  Mg O   Si O2  Al2O3 Ед</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="f8ba5dd5-8da9-4770-882e-59651d2b149b">
+      <ID>Основность Шлака  Ca O  Mg O  Si O2 Ед</ID>
+      <Name>Основность Шлака  Ca O  Mg O  Si O2 Ед</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="e073802d-203c-4728-9ddd-5666ff326f42">
+        <MeasureID>Основность Шлака  Ca O  Mg O  Si O2 Ед</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="13e1131a-6c82-4c87-b9a7-88bb2f38847b">
+      <ID>Основность Шлака Ca O  Si O2 Ед</ID>
+      <Name>Основность Шлака Ca O  Si O2 Ед</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="8bb292df-75a6-44c9-bea0-76a4bae8027d">
+        <MeasureID>Основность Шлака Ca O  Si O2 Ед</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="b2ec9039-6afc-46ab-b0f7-0abb4c252b8a">
+      <ID>Приход Тепла Горение Кокса к Джкг Чугуна</ID>
+      <Name>Приход Тепла Горение Кокса к Джкг Чугуна</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="5f3d35ea-ec22-4129-a485-807321701140">
+        <MeasureID>Приход Тепла Горение Кокса к Джкг Чугуна</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="f5feca14-740f-4fcb-8162-aa57ed20101a">
+      <ID>Приход Тепла Тепло От Горения Природного Газа к Джкг Чугуна</ID>
+      <Name>Приход Тепла Тепло От Горения Природного Газа к Джкг Чугуна</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="b3f683fd-25a2-47a4-9b8c-7f4ca9ff6d07">
+        <MeasureID>Приход Тепла Тепло От Горения Природного Газа к Джкг Чугуна</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="31fb9668-74be-4fe5-84b0-03d55509a15c">
+      <ID>Приход Тепла Тепло Шлакообразования к Джкг Чугуна</ID>
+      <Name>Приход Тепла Тепло Шлакообразования к Джкг Чугуна</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="5fd6a971-8447-4162-9480-82080a97ed95">
+        <MeasureID>Приход Тепла Тепло Шлакообразования к Джкг Чугуна</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="3a132afa-f589-4676-bb6d-397cb4131bb2">
+      <ID>Приход Тепла Физическое Тепло Дутья к Джкг Чугуна</ID>
+      <Name>Приход Тепла Физическое Тепло Дутья к Джкг Чугуна</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="989003d1-0536-43b9-8230-31a1d8b93d06">
+        <MeasureID>Приход Тепла Физическое Тепло Дутья к Джкг Чугуна</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="1eb2f4a0-5824-420d-9e9e-f5480dd48840">
+      <ID>Производительность Среднесуточная тсутки</ID>
+      <Name>Производительность Среднесуточная тсутки</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="18a7e8ac-3415-44a3-be5e-608f27a8f659">
+        <MeasureID>Производительность Среднесуточная тсутки</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="07a6f748-d5c5-4253-8c66-3d70aecdb2ae">
+      <ID>Расход Тепла Восстановление Оксидов Fe Водородом к Джкг Чугуна</ID>
+      <Name>Расход Тепла Восстановление Оксидов Fe Водородом к Джкг Чугуна</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="fe775f5c-8685-4b43-b877-e1438cf3fbc8">
+        <MeasureID>Расход Тепла Восстановление Оксидов Fe Водородом к Джкг Чугуна</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="5a45cbd6-1505-4ac8-b0d7-9951b8db66ee">
+      <ID>Расход Тепла Восстановление Оксидов Fe к Джкг Чугуна</ID>
+      <Name>Расход Тепла Восстановление Оксидов Fe к Джкг Чугуна</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="d02d2a2f-f4ce-4ae2-8c02-e1080ca88a9d">
+        <MeasureID>Расход Тепла Восстановление Оксидов Fe к Джкг Чугуна</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="1a46d310-c250-42fa-a9d8-e6de570d06db">
+      <ID>Расход Тепла Восстановление Оксидов Примесей к Джкг Чугуна</ID>
+      <Name>Расход Тепла Восстановление Оксидов Примесей к Джкг Чугуна</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="492a9642-3d6c-41b9-ae75-5d451f62ab4e">
+        <MeasureID>Расход Тепла Восстановление Оксидов Примесей к Джкг Чугуна</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="3d828b2f-463b-46ed-9f7e-27ae936e6af3">
+      <ID>Расход Тепла Десульфурация Чугуна к Джкг Чугуна</ID>
+      <Name>Расход Тепла Десульфурация Чугуна к Джкг Чугуна</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="c7f86ccd-a927-4497-8202-629032d79440">
+        <MeasureID>Расход Тепла Десульфурация Чугуна к Джкг Чугуна</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="5ce6d89b-48c9-4980-be0d-150592d0d8a6">
+      <ID>Расход Тепла Нагрев Чугуна к Джкг Чугуна</ID>
+      <Name>Расход Тепла Нагрев Чугуна к Джкг Чугуна</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="42bd81af-78af-4faa-8c6d-4d849e276720">
+        <MeasureID>Расход Тепла Нагрев Чугуна к Джкг Чугуна</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="26bcb711-f43a-40ef-a77b-ef5fa8dbd5f0">
+      <ID>Расход Тепла Нагрев Шлака к Джкг Чугуна</ID>
+      <Name>Расход Тепла Нагрев Шлака к Джкг Чугуна</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="c84584dd-ca52-41c8-b8c3-fa60e7273f8c">
+        <MeasureID>Расход Тепла Нагрев Шлака к Джкг Чугуна</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="241b771a-5b3d-4fcb-b2f6-eb3a1ff1b233">
+      <ID>Расход Тепла Разложение Влаги Дутья к Джкг Чугуна</ID>
+      <Name>Расход Тепла Разложение Влаги Дутья к Джкг Чугуна</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="0e5df01b-e1c9-4c43-bdec-b69328addd93">
+        <MeasureID>Расход Тепла Разложение Влаги Дутья к Джкг Чугуна</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="77a18b78-ae1b-492f-836f-1369f79fa5d5">
+      <ID>Расход Тепла Разложение Влаги Шихты к Джкг Чугуна</ID>
+      <Name>Расход Тепла Разложение Влаги Шихты к Джкг Чугуна</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="f447e14d-8f13-40d3-b7ed-e3718212a29d">
+        <MeasureID>Расход Тепла Разложение Влаги Шихты к Джкг Чугуна</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="06d6f827-6fc3-4558-9928-9775c47c3461">
+      <ID>Расход Тепла Разложение Известняка к Джкг Чугуна</ID>
+      <Name>Расход Тепла Разложение Известняка к Джкг Чугуна</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="2e44e614-13e0-4c9e-b96c-38ef203f2a2a">
+        <MeasureID>Расход Тепла Разложение Известняка к Джкг Чугуна</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="fd499b26-7d74-4788-b65c-e951fd4bb791">
+      <ID>Расход Тепла Тепло Колошникового Газа к Джкг Чугуна</ID>
+      <Name>Расход Тепла Тепло Колошникового Газа к Джкг Чугуна</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="36a477fc-34d6-4d8a-a2bd-92f6c37f04f2">
+        <MeasureID>Расход Тепла Тепло Колошникового Газа к Джкг Чугуна</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="977a2d18-e548-4151-bcb4-b5d3d4460255">
+      <ID>Расход Тепла Тепловые Потери к Джкг Чугуна</ID>
+      <Name>Расход Тепла Тепловые Потери к Джкг Чугуна</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="3b80856f-2c1d-49e2-8f64-b62eb3f358ab">
+        <MeasureID>Расход Тепла Тепловые Потери к Джкг Чугуна</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="ea1ccb65-998a-4bdf-83de-61deb13f1486">
+      <ID>Состав Колошникового Газа CO</ID>
+      <Name>Состав Колошникового Газа CO</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="1303b567-34a5-4b1d-8091-7ec21ff337a7">
+        <MeasureID>Состав Колошникового Газа CO</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="c4587cf9-d68f-4433-9ea3-b3f7b9165592">
+      <ID>Состав Колошникового Газа CO2</ID>
+      <Name>Состав Колошникового Газа CO2</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="73279b74-5735-4490-a975-d1c19d5faa58">
+        <MeasureID>Состав Колошникового Газа CO2</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="dd03d4a6-5eb8-41b1-a067-3aa0cf02eba7">
+      <ID>Состав Колошникового Газа H2</ID>
+      <Name>Состав Колошникового Газа H2</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="b084e1f0-9d6d-4a35-b518-1696e967051a">
+        <MeasureID>Состав Колошникового Газа H2</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="bf16e936-4beb-42dc-96de-c544f3f9ca0a">
+      <ID>Степень Использования CO в Печи Ед</ID>
+      <Name>Степень Использования CO в Печи Ед</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="a4b10062-a882-4a09-ae18-977973a90c22">
+        <MeasureID>Степень Использования CO в Печи Ед</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="fc5534f7-8a84-43c8-aeb9-641c8dbbe757">
+      <ID>Температура Колошникового Газа °С</ID>
+      <Name>Температура Колошникового Газа °С</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="2879dc26-809f-4e82-bd35-3f7c6cf5fb1c">
+        <MeasureID>Температура Колошникового Газа °С</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="982bec6e-31ff-472e-b6f0-800f8d1e299e">
+      <ID>Удельный Выход Шлака Кгт Чугуна</ID>
+      <Name>Удельный Выход Шлака Кгт Чугуна</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="2b479269-f843-4d93-a9ba-ff53e6313f2e">
+        <MeasureID>Удельный Выход Шлака Кгт Чугуна</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="287e7b54-465c-497a-910f-f0dd9aa796c1">
+      <ID>Удельный Расход ЖРМ Кгт Чугуна</ID>
+      <Name>Удельный Расход ЖРМ Кгт Чугуна</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="9e89a344-06b8-43ea-ba13-c6ae41e17d4e">
+        <MeasureID>Удельный Расход ЖРМ Кгт Чугуна</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="abc71765-2706-41af-b0a3-9080c11a334d">
+      <ID>Удельный Расход Кокса Кгт Чугуна</ID>
+      <Name>Удельный Расход Кокса Кгт Чугуна</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="69933f53-4e11-4e19-9dda-cd97140645fc">
+        <MeasureID>Удельный Расход Кокса Кгт Чугуна</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="eb021be4-a10a-4e9f-8e8d-7b6c1ccb6673">
+      <ID>Химический Состав Чугуна C</ID>
+      <Name>Химический Состав Чугуна C</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="1aee69c0-de9a-4adf-b398-3502012db14a">
+        <MeasureID>Химический Состав Чугуна C</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="5109a7c6-566e-4a1f-bb15-408c7719bc96">
+      <ID>Химический Состав Чугуна Cr</ID>
+      <Name>Химический Состав Чугуна Cr</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="17c43a83-10c9-476c-98d8-6d4be4ea23b8">
+        <MeasureID>Химический Состав Чугуна Cr</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="2bd4534b-68b8-47e6-bf9d-aa5602bef4f3">
+      <ID>Химический Состав Чугуна Mn</ID>
+      <Name>Химический Состав Чугуна Mn</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="9151f029-c4fc-444b-aa58-b49b96e4b645">
+        <MeasureID>Химический Состав Чугуна Mn</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="bc63dcde-cab0-441d-9f95-1c5de8b0a5ce">
+      <ID>Химический Состав Чугуна P</ID>
+      <Name>Химический Состав Чугуна P</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="7fc67d6a-a84c-431d-b0b6-6a4aadf864b8">
+        <MeasureID>Химический Состав Чугуна P</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="03277418-5480-4853-86c4-b6e21d46617e">
+      <ID>Химический Состав Чугуна S</ID>
+      <Name>Химический Состав Чугуна S</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="0d0cba2a-6c96-4d10-b65d-0435324e8039">
+        <MeasureID>Химический Состав Чугуна S</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="dcaaabf9-58c3-4e0f-84fc-6000f9e6f2fc">
+      <ID>Химический Состав Чугуна Si</ID>
+      <Name>Химический Состав Чугуна Si</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="e7564d6b-f67f-4434-966a-3d176465de73">
+        <MeasureID>Химический Состав Чугуна Si</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="6b993f46-b680-476a-8f91-57b473760ac0">
+      <ID>Химический Состав Чугуна Ti</ID>
+      <Name>Химический Состав Чугуна Ti</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="0799695a-1d15-4b17-b565-2638ce95ae2a">
+        <MeasureID>Химический Состав Чугуна Ti</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="b41e8e78-4a47-4723-a14a-f577646c5d5c">
+      <ID>Химический Состав Чугуна V</ID>
+      <Name>Химический Состав Чугуна V</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="a199d672-27c4-45fd-ae5e-ee45b78dfdfe">
+        <MeasureID>Химический Состав Чугуна V</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="013d53a0-14b0-48f3-82ea-f9673e9f0fee">
+      <ID>Число T OLAP Fact Balance Teplo</ID>
+      <Name>Число T OLAP Fact Balance Teplo</Name>
+      <Type>Long</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="55b6d206-a343-4ae4-9ad3-7d224f7b7556">
+        <MeasureID>Число T OLAP Fact Balance Teplo</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+  </Columns>
+  <MiningModels>
+    <MiningModel dwd:design-time-name="a15c075f-5455-4e39-bd1c-bc13c041f0f8">
+      <ID>T OLAP Dim Dates</ID>
+      <Name>T OLAP Dim Dates</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Decision_Trees</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="aaa45a8d-e109-4d98-8ab7-933f5bae2d6a">
+          <ID>PK Дата</ID>
+          <Name>PK Дата</Name>
+          <SourceColumnID>PK Дата</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="505c05e0-2772-434a-a8c6-1f33a0f0df71">
+          <ID>Дутье Влажность гм3</ID>
+          <Name>Дутье Влажность гм3</Name>
+          <SourceColumnID>Дутье Влажность гм3</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="6ede436b-6790-43cf-bbd0-ffc867351b7c">
+          <ID>Дутье Расход м3мин</ID>
+          <Name>Дутье Расход м3мин</Name>
+          <SourceColumnID>Дутье Расход м3мин</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="ddcd80c1-bfc2-445d-bd94-97ae0736acf6">
+          <ID>Дутье Содержание O2</ID>
+          <Name>Дутье Содержание O2</Name>
+          <SourceColumnID>Дутье Содержание O2</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="37d9f745-f850-42c0-b3f1-eace7d55239b">
+          <ID>Дутье Температура °С</ID>
+          <Name>Дутье Температура °С</Name>
+          <SourceColumnID>Дутье Температура °С</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="4381b309-c888-454b-85d3-3b127ad3f0d9">
+          <ID>Дутье Удельный Расход Природного Газа м3т Чугуна</ID>
+          <Name>Дутье Удельный Расход Природного Газа м3т Чугуна</Name>
+          <SourceColumnID>Дутье Удельный Расход Природного Газа м3т Чугуна</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="21eb2d9c-58b7-4dae-9f71-ea28be54edf8">
+          <ID>Зольность Кокса</ID>
+          <Name>Зольность Кокса</Name>
+          <SourceColumnID>Зольность Кокса</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="c9462262-4650-4128-8bab-fd66a1373c8d">
+          <ID>Общий Приходрасход Тепла в Печи к Джкг Чугуна</ID>
+          <Name>Общий Приходрасход Тепла в Печи к Джкг Чугуна</Name>
+          <SourceColumnID>Общий Приходрасход Тепла в Печи к Джкг Чугуна</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="2b79d2a1-bf9a-49b1-84d7-e806ec7ae201">
+          <ID>Основность Шлака  Ca O  Mg O   Si O2  Al2O3 Ед</ID>
+          <Name>Основность Шлака  Ca O  Mg O   Si O2  Al2O3 Ед</Name>
+          <SourceColumnID>Основность Шлака  Ca O  Mg O   Si O2  Al2O3 Ед</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="0c6caf24-dc8a-4b18-bf89-0bf260a46a1c">
+          <ID>Основность Шлака  Ca O  Mg O  Si O2 Ед</ID>
+          <Name>Основность Шлака  Ca O  Mg O  Si O2 Ед</Name>
+          <SourceColumnID>Основность Шлака  Ca O  Mg O  Si O2 Ед</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="259993d7-802e-4d51-bea4-fa50fc53467f">
+          <ID>Основность Шлака Ca O  Si O2 Ед</ID>
+          <Name>Основность Шлака Ca O  Si O2 Ед</Name>
+          <SourceColumnID>Основность Шлака Ca O  Si O2 Ед</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="36de4c35-d3c0-47cf-9f21-45c52992d310">
+          <ID>Приход Тепла Горение Кокса к Джкг Чугуна</ID>
+          <Name>Приход Тепла Горение Кокса к Джкг Чугуна</Name>
+          <SourceColumnID>Приход Тепла Горение Кокса к Джкг Чугуна</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="21ee9991-97c1-4696-957b-c22e963c8239">
+          <ID>Приход Тепла Тепло От Горения Природного Газа к Джкг Чугуна</ID>
+          <Name>Приход Тепла Тепло От Горения Природного Газа к Джкг Чугуна</Name>
+          <SourceColumnID>Приход Тепла Тепло От Горения Природного Газа к Джкг Чугуна</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="bd6daa60-5c31-42b3-b84d-f060e1e9e323">
+          <ID>Приход Тепла Тепло Шлакообразования к Джкг Чугуна</ID>
+          <Name>Приход Тепла Тепло Шлакообразования к Джкг Чугуна</Name>
+          <SourceColumnID>Приход Тепла Тепло Шлакообразования к Джкг Чугуна</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="afc8206e-a0b2-4737-814b-2292d9a4cfe3">
+          <ID>Приход Тепла Физическое Тепло Дутья к Джкг Чугуна</ID>
+          <Name>Приход Тепла Физическое Тепло Дутья к Джкг Чугуна</Name>
+          <SourceColumnID>Приход Тепла Физическое Тепло Дутья к Джкг Чугуна</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="ae007dfc-bedc-4f36-8224-b7ebf56a5da3">
+          <ID>Производительность Среднесуточная тсутки</ID>
+          <Name>Производительность Среднесуточная тсутки</Name>
+          <SourceColumnID>Производительность Среднесуточная тсутки</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="6c190c31-8386-4248-ab6f-352c2d12df2e">
+          <ID>Расход Тепла Восстановление Оксидов Fe Водородом к Джкг Чугуна</ID>
+          <Name>Расход Тепла Восстановление Оксидов Fe Водородом к Джкг Чугуна</Name>
+          <SourceColumnID>Расход Тепла Восстановление Оксидов Fe Водородом к Джкг Чугуна</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="4dceb226-2f46-4d05-a33d-259a20fb2594">
+          <ID>Расход Тепла Восстановление Оксидов Fe к Джкг Чугуна</ID>
+          <Name>Расход Тепла Восстановление Оксидов Fe к Джкг Чугуна</Name>
+          <SourceColumnID>Расход Тепла Восстановление Оксидов Fe к Джкг Чугуна</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="3e517d55-2b0a-4797-962a-e809a06a9493">
+          <ID>Расход Тепла Восстановление Оксидов Примесей к Джкг Чугуна</ID>
+          <Name>Расход Тепла Восстановление Оксидов Примесей к Джкг Чугуна</Name>
+          <SourceColumnID>Расход Тепла Восстановление Оксидов Примесей к Джкг Чугуна</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="4988e501-16bc-495c-bd17-6a82efbba848">
+          <ID>Расход Тепла Десульфурация Чугуна к Джкг Чугуна</ID>
+          <Name>Расход Тепла Десульфурация Чугуна к Джкг Чугуна</Name>
+          <SourceColumnID>Расход Тепла Десульфурация Чугуна к Джкг Чугуна</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="17564888-8b8c-4ee2-9b6a-5b4bff436187">
+          <ID>Расход Тепла Нагрев Чугуна к Джкг Чугуна</ID>
+          <Name>Расход Тепла Нагрев Чугуна к Джкг Чугуна</Name>
+          <SourceColumnID>Расход Тепла Нагрев Чугуна к Джкг Чугуна</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="650cf9ee-7254-4720-91d2-912e827574f3">
+          <ID>Расход Тепла Нагрев Шлака к Джкг Чугуна</ID>
+          <Name>Расход Тепла Нагрев Шлака к Джкг Чугуна</Name>
+          <SourceColumnID>Расход Тепла Нагрев Шлака к Джкг Чугуна</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="0abe45b4-c4b4-4ea6-8ad9-82723952663e">
+          <ID>Расход Тепла Разложение Влаги Дутья к Джкг Чугуна</ID>
+          <Name>Расход Тепла Разложение Влаги Дутья к Джкг Чугуна</Name>
+          <SourceColumnID>Расход Тепла Разложение Влаги Дутья к Джкг Чугуна</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="01b93dd1-e58b-4505-922d-cda7e8407829">
+          <ID>Расход Тепла Разложение Влаги Шихты к Джкг Чугуна</ID>
+          <Name>Расход Тепла Разложение Влаги Шихты к Джкг Чугуна</Name>
+          <SourceColumnID>Расход Тепла Разложение Влаги Шихты к Джкг Чугуна</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="bc8f658d-a49e-4959-b87d-99d214cdb563">
+          <ID>Расход Тепла Разложение Известняка к Джкг Чугуна</ID>
+          <Name>Расход Тепла Разложение Известняка к Джкг Чугуна</Name>
+          <SourceColumnID>Расход Тепла Разложение Известняка к Джкг Чугуна</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="aa2003ef-7175-4846-b6f9-a8f77b7ca0e3">
+          <ID>Расход Тепла Тепло Колошникового Газа к Джкг Чугуна</ID>
+          <Name>Расход Тепла Тепло Колошникового Газа к Джкг Чугуна</Name>
+          <SourceColumnID>Расход Тепла Тепло Колошникового Газа к Джкг Чугуна</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="9f6de446-4cd4-48a5-9e74-84a984d22aad">
+          <ID>Расход Тепла Тепловые Потери к Джкг Чугуна</ID>
+          <Name>Расход Тепла Тепловые Потери к Джкг Чугуна</Name>
+          <SourceColumnID>Расход Тепла Тепловые Потери к Джкг Чугуна</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="151fa410-2d75-404e-8a8b-9a071bc54a79">
+          <ID>Состав Колошникового Газа CO</ID>
+          <Name>Состав Колошникового Газа CO</Name>
+          <SourceColumnID>Состав Колошникового Газа CO</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="db94e476-4f1a-482c-ba8b-357bb54fa446">
+          <ID>Состав Колошникового Газа CO2</ID>
+          <Name>Состав Колошникового Газа CO2</Name>
+          <SourceColumnID>Состав Колошникового Газа CO2</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="1e598321-dbbb-4b0b-bd06-d890dee106c5">
+          <ID>Состав Колошникового Газа H2</ID>
+          <Name>Состав Колошникового Газа H2</Name>
+          <SourceColumnID>Состав Колошникового Газа H2</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="28766e1b-cf7f-4c0a-8581-4e147c5cbab5">
+          <ID>Степень Использования CO в Печи Ед</ID>
+          <Name>Степень Использования CO в Печи Ед</Name>
+          <SourceColumnID>Степень Использования CO в Печи Ед</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="6eb5a2e3-7354-41a7-aa22-34cffc8b221a">
+          <ID>Температура Колошникового Газа °С</ID>
+          <Name>Температура Колошникового Газа °С</Name>
+          <SourceColumnID>Температура Колошникового Газа °С</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="e02b7652-47a4-4950-963a-8486f61f4a1b">
+          <ID>Удельный Выход Шлака Кгт Чугуна</ID>
+          <Name>Удельный Выход Шлака Кгт Чугуна</Name>
+          <SourceColumnID>Удельный Выход Шлака Кгт Чугуна</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="82733fe2-d4f6-4139-909e-cafe26219c85">
+          <ID>Удельный Расход ЖРМ Кгт Чугуна</ID>
+          <Name>Удельный Расход ЖРМ Кгт Чугуна</Name>
+          <SourceColumnID>Удельный Расход ЖРМ Кгт Чугуна</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="97b15c49-511c-4bdf-9e08-24ecb9c48b87">
+          <ID>Удельный Расход Кокса Кгт Чугуна</ID>
+          <Name>Удельный Расход Кокса Кгт Чугуна</Name>
+          <SourceColumnID>Удельный Расход Кокса Кгт Чугуна</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="50de1df2-8bed-4ffe-a193-d6618a8fe94d">
+          <ID>Химический Состав Чугуна C</ID>
+          <Name>Химический Состав Чугуна C</Name>
+          <SourceColumnID>Химический Состав Чугуна C</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="9e53e320-43a5-4c94-b78b-d5d22246ffc7">
+          <ID>Химический Состав Чугуна Cr</ID>
+          <Name>Химический Состав Чугуна Cr</Name>
+          <SourceColumnID>Химический Состав Чугуна Cr</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="3f5ff0cb-090f-4ddd-9dc2-b3013cfa420d">
+          <ID>Химический Состав Чугуна Mn</ID>
+          <Name>Химический Состав Чугуна Mn</Name>
+          <SourceColumnID>Химический Состав Чугуна Mn</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="8d3f988c-8290-4ecf-b480-a04dc68e42ae">
+          <ID>Химический Состав Чугуна P</ID>
+          <Name>Химический Состав Чугуна P</Name>
+          <SourceColumnID>Химический Состав Чугуна P</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="e7ff1d84-65d5-4252-92b2-6f7ba643eee8">
+          <ID>Химический Состав Чугуна S</ID>
+          <Name>Химический Состав Чугуна S</Name>
+          <SourceColumnID>Химический Состав Чугуна S</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="3eb3c1f5-f2e4-4557-ac81-c700dcbf173b">
+          <ID>Химический Состав Чугуна Si</ID>
+          <Name>Химический Состав Чугуна Si</Name>
+          <SourceColumnID>Химический Состав Чугуна Si</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="b15efa88-959d-4712-90f7-aa93f7a67767">
+          <ID>Химический Состав Чугуна Ti</ID>
+          <Name>Химический Состав Чугуна Ti</Name>
+          <SourceColumnID>Химический Состав Чугуна Ti</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="55e462e4-a9db-4109-9c71-604f7d55fbea">
+          <ID>Химический Состав Чугуна V</ID>
+          <Name>Химический Состав Чугуна V</Name>
+          <SourceColumnID>Химический Состав Чугуна V</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="1d06a00c-bf63-4dab-8200-5687470b7f79">
+          <ID>Число T OLAP Fact Balance Teplo</ID>
+          <Name>Число T OLAP Fact Balance Teplo</Name>
+          <SourceColumnID>Число T OLAP Fact Balance Teplo</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+      </Columns>
+    </MiningModel>
+  </MiningModels>
+</MiningStructure>
